@@ -578,7 +578,7 @@
       <div class="case-card">
         <div class="case-visual">
           <!-- 制作事例の写真。正式公開後は risaikuruyumekoubou.com 側の画像パスに差し替えてください -->
-          <img class="case-photo" src="https://st19731001-del.github.io/sample-HP/images/hero-exterior.jpg" alt="リサイクルショップ夢工房 外観">
+          <img class="case-photo" src="image/hero-exterior.jpg" alt="リサイクルショップ夢工房 外観">
         </div>
         <div class="case-body">
           <span class="case-tag">リサイクルショップ夢工房様（北海道小樽市）</span>
@@ -677,6 +677,10 @@
 
 <script>
   const navToggle = document.querySelector('#nav-toggle');
+  document.querySelectorAll('.logo-img').forEach((logo) => {
+    logo.src = 'image/swps_logo.jpg';
+  });
+  document.querySelector('.avatar img').src = 'image/swps_logo.jpg';
   document.querySelectorAll('.nav-links a').forEach((link) => {
     link.addEventListener('click', () => {
       navToggle.checked = false;
